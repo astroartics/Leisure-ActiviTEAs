@@ -1,0 +1,73 @@
+body{
+    background-image: url("/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Kanit";
+    text-align:center;
+}
+
+.container-fluid{
+	padding:0;
+}
+
+h1 {
+    width:100%;
+    height:13vh;
+    background-color: #424242;
+    margin: 0;
+    padding: 3.5vh;
+    color: white;
+    font-family: "Merriweather", serif;
+    font-weight:400;
+    position:fixed;
+    top:0;
+}
+
+  button {
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 25px;
+    display: block;
+    width: 80%;
+    padding: 10px;
+    background-color: #ffca00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:auto;
+    position:absolute;
+    bottom:7vh;
+  }
+
+  button:hover {
+    background-color: #ffd500;
+  }
+  
+  #back {
+    width:5%;
+    height:13vh;
+    position: fixed;
+    left: 0;
+    top:0;
+    font-size: 35px;
+    background-color: #212121;
+    color:white;
+    border: 0;
+    margin:0;
+}
+
+#back:hover {
+    background-color: #7c7c7d;
+}
+
+#TriviaBox{
+	width:60vw;
+	height:45vh;
+	position:fixed;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	background-color:white;
+	padding:100px;
+}

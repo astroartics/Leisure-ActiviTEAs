@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="appCSS.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<style>
+			body{
+				background-image: url("Images/feedback_background.png"); 
+  				height: 500px; 
+  				background-position: center; 
+  				background-repeat: no-repeat; 
+  				background-size: cover; 
+			}
+			
+			h1{
+				position:absolute;
+				top:0;
+				width:100%;
+				text-align:center;
+				margin:0;
+				padding:1.5vh 0 0 0;
+				height:10vh;
+				color:white;
+				background-color:#626363;
+			}
+			
+			textarea{
+				width:50%;
+				height:30vh;
+				position:absolute;
+				left:50%;
+				top:52%;
+				transform:translate(-50%,-50%);
+				text-align:center;
+				font-size:20px;
+				padding-top:10px;
+			}
+			
+			input{
+				width:31%;
+				font-size:20px;
+				position:absolute;
+				left:50%;
+				top:28%;
+				transform:translate(-50%,0);
+				padding:10px;
+				text-align : center;
+				font-family: "monospace", sans-serif;
+				font-weight:400;
+				background-color : white;
+				border : 1px solid black;
+				color : #3d3d3d;
+			}
+			
+			#submit{
+				position:absolute;
+				left:50%;
+				top:60%;
+				transform:translate(-50%,0%);
+				font-size:23px;
+				background-color:#31eb63;
+				padding:10px;
+			}
+			
+			#edit,#done{
+				background-color : #fc8383;
+				position:absolute;
+				left:63%;
+				top:29%;
+				font-size:20px;
+			}
+			
+			#done{
+				background-color : #a6e36d;
+				left:64%;
+			}
+			
+			#userImg{
+				width : 50px;
+				height : 50px;
+				position : absolute;
+				top : 2%;
+			}
+			
+			#UserDiv{
+				width : 10%;
+				height : 8.5%;
+				position : absolute;
+				left:50%;
+				top:15%;
+				transform:translate(-50%,0%);
+				background-color : #4a4949;
+				border : 1px solid black;
+				display : flex;
+				flex-wrap : wrap;
+				flex-direction : column;
+				align-items : center;
+			}
+			
+			p{
+				position : absolute;
+				bottom : 2%;
+				margin : 0;
+				font-size : 1em;
+				color : white;
+			}
+			
+			#userTemp{
+				width : 2%;
+				height : 2%;
+				position : absolute;
+				left:50%;
+				top:15%;
+			}
+		</style>
+	</head>
+	
+	<body>	
+		<h1 style="">Your feedback is valuable!<button id="back">&#8962;</button></h1>
+		<form action="appPHP.php" method="POST">
+			<input type="text" name="userTemp" placeholder="Enter your name here" id="userTemp">
+			<div id="UserDiv"><img src="userImg.jpg" id="userImg"><p id="user" name="user">Username</p></div>
+			<input type="text" name="name" placeholder="Enter your name here" id="name" maxlength="10">
+			<input type="text" name="name" placeholder="Enter your name here" id="FakeName" disabled style="text-align : left; padding-left : 20px;">
+			<textarea placeholder="Enter your feedback or suggestions (if any)" name="feedback" maxlength="150"></textarea>
+			<button id="submit">Submit</button>
+		</form>
+		<button id="edit">Edit</button>
+		<button id="done">&#10003;</button>
+		
+		<script src="appJS2.js"></script>
+		
+		<script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	</body>
+</html>

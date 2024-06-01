@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        body {
+            margin: 0;
+            text-align:center;
+        }
+
+        h1 {
+        	width:100%;
+  		height:13vh;
+    		background-color: #424242;
+    		margin: 0;
+    		color: white;
+    		font-family: "Merriweather", serif;
+    		font-weight:400;
+    		padding:3.5vh;
+    		position:fixed;
+    		top:0;
+	}
+
+        img {
+            margin: 10px 10px 10px 10px;
+            border: 1px solid black;
+        }
+
+        #imageOnDisplay {
+            left: 50%;
+            top: 13vh;
+            height: 100vh;
+            width: 50%;
+            padding: 2%;
+            overflow-x: scroll;
+        }
+
+        #mainImage {
+            height: 50%;
+            margin: auto;
+            margin-top: 15vh;
+        }
+
+        #pictures {
+            margin-top: 13vh;
+            overflow-x: scroll;
+        }
+
+        #title {
+            margin-top: 10px;
+        }
+        
+        #back {
+    		width:5%;
+    		height:13vh;
+    		font-size: 35px;
+    		background-color: #212121;
+    		color:white;
+    		border: 0;
+    		position:fixed;
+    		top:0;
+    		left:0;
+	}
+
+	#back:hover {
+   		 background-color: #7c7c7d;
+	}
+    </style>
+</head>
+
+<body>
+    <h1>Famous Paintings For Reference</h1>
+    <button id="back">&#8676;</button>
+
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div id="pictures" class="col-12">
+                <div id="allImages"></div>
+            </div>
+
+            <div id="imageOnDisplay" class="col-6 bg-dark position-fixed text-center">
+                <button id="closeImage">&#10060;</button>
+                <img id="mainImage">
+                <figcaption id="title"></figcaption>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="ImagesJS.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

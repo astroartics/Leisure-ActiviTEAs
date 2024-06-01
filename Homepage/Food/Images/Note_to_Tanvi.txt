@@ -1,0 +1,7 @@
+- Rename the photos as 'Img1','Img2',..... [Note that 'I' is capital]
+- You will not have to change anything in the CSS file.
+- The only change you will have to do is the FOR LOOP in JS file, change '19' to the total image count of Food Section.
+
+- Delete this file if everything is working perfectly.
+
+*IMPORTANT* - Change permission for all images to 'Read-only' or 'Read and Write' so that 'Others' can read images too, or the images may not load.

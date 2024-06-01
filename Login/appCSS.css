@@ -1,0 +1,336 @@
+body{
+	width:100%;
+	height:100vh;
+	margin:0;
+  	background-color:#949494;
+}
+
+#images{
+	width:100%;
+	height:100vh;
+	margin:0;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-between;
+  	flex-wrap: wrap;
+  	background-color:#949494;
+}
+
+img{
+	width:33.33%;
+	height:50vh;
+	padding:0;
+	margin:0;
+}
+
+img:hover{
+	width:32%;
+	height:48vh;
+}
+
+#img1{
+	position:absolute;
+	left:0;
+}
+
+#img2{
+	position:absolute;
+	right:0;
+}
+#img3{
+	position:absolute;
+	left:0;
+	bottom:0;
+}
+#img4{
+	position:absolute;
+	left:50%;
+	bottom:0;
+	transform: translate(-50%, 0%);
+}
+#img5{
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+
+#music,#food,#sports,#photography,#art{	
+	width:33.33%;
+	height:5.5vh;
+	background-color:#bd9100;
+	text-align:center;
+	color:white;
+	font-size:2em;
+	font-family: "Kanit", sans-serif;
+	font-weight:400;
+}
+
+#music{
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+#food{
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+#sports{
+	background-color:#705600;
+	position:absolute;
+	left:0;
+	top:50%;
+}
+
+#photography{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%, 0%);
+}
+
+#art{
+	background-color:#705600;
+	position:absolute;
+	top:50%;
+	right:0;
+}
+
+
+
+h1{
+	width:33.33%;
+	height:27vh;
+	text-align:center;
+	background-color:#e8e9eb;
+	color:#747575;
+	margin:auto;
+	margin-top:20vh;
+	padding:0;
+	padding-top:3vh;
+	font-size:4em;
+	font-family: "Merriweather", serif;
+	font-weight:400;
+}
+/*#c7b34e*/
+b{
+	font-weight:400;
+	color:#edca02;
+	-webkit-text-stroke-width: 0.4px;
+        -webkit-text-stroke-color: black;
+}
+
+h2{
+	width:40%;
+	height:10vh;
+	text-align:center;
+	margin:150px auto 0 auto;
+	background-color:#747575;
+	color:white;
+	font-size:3.5em;
+	font-family: "Kanit", sans-serif;
+	font-weight:400;
+}
+
+#h6{
+	font-size:20px;
+	position:absolute;
+	right:35%;
+	top:44vh;
+}
+
+ul{
+	width:33.33%;
+	height:5.5vh;
+	position:absolute;
+	left:50%;
+	transform: translate(-50%, 0%);
+	background-color:#626363;
+	margin:0;
+	border:0;
+	padding:0;
+}
+
+li{
+	width:33.33%;
+	height:5.5vh;
+	list-style-type:none;
+	float:left;
+	text-align:center;
+}
+
+li a{
+	text-decoration:none;
+	display:block;
+	padding:10px 20px;
+	color:white;
+	font-size:1.52em;
+}
+
+li a:hover{
+	background-color:#cfd1d0;
+	color:#626363;
+}
+
+#clickOnImage{
+	position:absolute;
+	left:50%;
+	top:15vh;
+	transform: translate(-50%, 0%);
+	text-align:center;
+	color:white;
+	font-size:1.5em;
+ 	animation: blinker 1000ms step-start infinite;
+}
+
+@keyframes blinker {
+	50%{
+		opacity:0;
+	}
+}
+
+#people{
+	width:90%;
+	margin:0 auto;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+	align-items:center;
+  	flex-wrap: wrap;
+  	background-color:white;
+}
+
+#person1,#person2,#person3{
+	width:30%;
+	height:80vh;
+	margin:auto;
+	border:1px solid black;
+	margin:15px 10px;
+	display:grid;
+	grid-template-rows:repeat(2);
+	grid-template-rows:70% 30%;
+	background-color:#cfd1d0;
+}
+
+#person1Img,#person2Img,#person3Img{
+	width:30vh;
+	height:30vh;
+	background-color:#626363;
+	padding:30px;
+	margin:auto;
+}
+
+#name1,#name2,#name3{
+	font-size:2em;
+	margin:0 auto;
+	text-align:center;
+}
+
+small{
+	font-size:0.8em;
+}
+
+#Quote{
+	font-size:30px;
+	margin:20px auto;
+	text-align:center;
+}
+
+@media (max-width:1470px){
+	h1{
+		font-size:4.5em;
+	}
+}
+
+@media (max-width:1300px){
+	h1{
+		font-size:4em;
+	}
+	li a{
+		font-size:1.2em;
+	}
+	ul{
+		height:5vh;
+	}
+}
+
+@media (max-width:1160px){
+	h1{
+		font-size:3.5em;
+	}
+}
+
+@media (max-width:1040px){
+	li a{
+		font-size:1em;
+	}
+	ul{
+		height:5vh;
+	}
+}
+
+@media (max-width:1010px){
+	h1{
+		font-size:3em;
+	}
+	#h6{
+		font-size:20px;
+	}
+	#clickOnImage{
+		font-size:1.2em;
+	}
+}
+
+#back {
+	width:5%;
+	height:11.5vh;
+	position: absolute;
+	top:0;
+	left:0;
+    	font-size: 40px;
+    	background-color: #454544;
+   	color: white;
+    	border: 0;
+	cursor: pointer;
+}
+
+#back:hover{
+	background-color: #8f8f8d;
+	color:black;
+}
+
+footer{
+	width:100%;
+	height:50vh;
+	background-color:#626363;
+	margin-top:150px;
+}
+
+h3{
+	width:50%;
+	height:30%;
+}
+
+#footerText{
+	width:50%;
+	height:30%;
+	margin:0;
+	font-family: "Kanit", sans-serif;
+	font-weight:300;
+	font-size:3em;
+	text-align:center;
+	color:white;
+	margin:auto;
+	background-color:#bf9b13;
+	padding-top:40px;
+}
+
+#commonEmail{
+	margin:0 auto;
+	text-align:center;
+	color:white;
+	font-size:30px;
+	padding-top:10px;
+}

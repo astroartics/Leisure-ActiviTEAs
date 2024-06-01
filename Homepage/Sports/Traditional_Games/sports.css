@@ -1,0 +1,68 @@
+:root{
+    --color-primary:#0073ff;
+    --color-white: #e9e9e9;
+    --color-black: #141d28;
+    --color-black-1:#212b38;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: -moz-linear-gradient("c:\Users\admin\Downloads\image.jpg");
+    
+
+}
+body{
+    font-family: sans-serif;
+}
+.sport{
+    background-color: var(--color-black);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    color:var(--color-white);
+    font-size: 20px;
+}
+.sport ul{
+    list-style: none;
+    display: flex;
+
+}
+.sport ul li{
+    padding: 10px ;
+    position: relative;
+}
+.sport ul li a{
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s;
+
+}
+.sport ul li a:hover{
+    color:var(--color-primary);
+}
+.dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top:100%;
+    background-color: var(--color-black);
+    
+
+}
+.dropdown_menu ul{
+    display: block;
+    margin: 10px;
+}
+
+.dropdown_menu ul li {
+    width: 150px;
+    padding: 10px;
+
+}

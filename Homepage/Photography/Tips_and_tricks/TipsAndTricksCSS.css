@@ -1,0 +1,85 @@
+body {
+    text-align: center;
+    background-image: url('tipsBack.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    margin: 0;
+}
+
+.container-fluid{
+	padding:0;
+}
+
+h1 {
+    width:100%;
+    height:13vh;
+    background-color: #424242;
+    margin: 0;
+    padding: 3.5vh;
+    color: white;
+    font-family: "Merriweather", serif;
+    font-weight:400;
+    position:fixed;
+    top:0;
+}
+
+h4 {
+    width:100%;
+    font-weight: 300;
+    background-color: #997d2b;
+    color:white;
+    margin-top: 0;
+    padding: 5px;
+    position:fixed;
+    top:19.5vh;
+    font-size:20px;
+}
+
+ul {
+    width: 100%;
+    list-style-type: none;
+    position: absolute;
+    left: 0;
+    top:13vh;
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 0;
+    background-color: antiquewhite;
+}
+
+li{
+	float:left;
+	width:50vw;
+	font-size:20px;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 0.1px solid rgb(167, 157, 144);
+    color:black;
+}
+
+a:hover {
+    background-color: rgb(200, 188, 172);
+    cursor: pointer;
+}
+
+#back {
+    width:5%;
+    height:13vh;
+    position: fixed;
+    left: 0;
+    top:0;
+    font-size: 35px;
+    background-color: #212121;
+    color:white;
+    border: 0;
+    margin:0;
+}
+
+#back:hover {
+    background-color: #7c7c7d;
+}

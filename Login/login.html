@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="appCSS.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<style>
+			body{
+  				height: 500px; 
+  				background-position: center; 
+  				background-repeat: no-repeat; 
+  				background-size: cover; 
+			}
+			
+			h1{
+				position:absolute;
+				top:0;
+				width:100%;
+				text-align:center;
+				margin:0;
+				padding:1.5vh 0 0 0;
+				height:10vh;
+				color:white;
+				background-color:#626363;
+			}
+			
+			#name{
+				width:30%;
+				font-size:20px;
+				position:absolute;
+				left:50%;
+				top:30%;
+				transform:translate(-50%,0);
+				text-align:center;
+				padding:10px;
+				font-family: "monospace", sans-serif;
+				font-weight:400;
+			}
+			
+			#pass{
+				width:30%;
+				font-size:20px;
+				position:absolute;
+				left:50%;
+				top:40%;
+				transform:translate(-50%,0);
+				text-align:center;
+				padding:10px;
+				font-family: "monospace", sans-serif;
+				font-weight:400;
+			}
+			
+			#login{
+				position:absolute;
+				left:50%;
+				top:58%;
+				transform:translate(-50%,0%);
+				font-size:23px;
+				background-color:#31eb63;
+				padding:10px;
+			}
+			
+			#usernameAlert{
+				width : 100%;
+				color : #fc0313;
+				background-color : white;
+				position:absolute;
+				top:35%;
+				text-align : center;
+				display : none;
+			}
+		</style>
+	</head>
+	
+	<body>	
+		<h1 style="">Login Page</h1>
+		<button id="back">&#8676;</button>
+		
+		<form method="POST" action="loginPHP.php">
+			<input type="text" name="username" id="name" placeholder="username" value="" maxlength="20"><br/><br/>
+			<input type="password" name="password" id="pass" placeholder="password" value="" maxlength="10"><br/><br/>
+			<button id="login">LOGIN</button>
+		</form>
+		
+		<script src="loginJS.js"></script>
+		<script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	</body>
+</html>

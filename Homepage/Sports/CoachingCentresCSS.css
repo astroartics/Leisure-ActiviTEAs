@@ -1,0 +1,98 @@
+body {
+    text-align: center;
+    background-color: rgba(224, 224, 224, 0.817);
+    margin: 0;
+}
+
+.container-fluid{
+	padding:0;
+}
+
+h1 {
+    width:100%;
+    height:13vh;
+    background-color: #424242;
+    margin: 0;
+    padding: 3.5vh;
+    color: white;
+    font-family: "Merriweather", serif;
+    font-weight:400;
+    position:fixed;
+    top:0;
+}
+
+#iframeBackground {
+	display: block;
+	height: 80vh;
+	width: 100vw;
+	border: none;
+	background-color: rgb(84, 84, 84);
+	margin:auto;
+}
+
+iframe {
+	display: block;
+	/* iframes are inline by default */
+	height: 80vh;
+	/* Set height to 100% of the viewport height */
+	width: 100vw;
+	/* Set width to 100% of the viewport width */
+	border: none;
+	/* Remove default border */
+	margin:auto;
+}
+
+#citiesList {
+	height: 40px;
+	width: 160px;
+	font-size: 1.2em;
+	background-color: rgb(247, 245, 222);
+	text-align: center;
+	margin-left:10px;
+}
+
+#selectSport{
+	height: 40px;
+	width: 160px;
+	font-size: 1.2em;
+	background-color: rgb(247, 245, 222);
+	text-align: center;
+	margin:15vh 20px 0px 10px;
+}
+
+button {
+	background-color: rgb(252, 95, 95);
+	font-size: 20px;
+	color:white;
+	margin:15px 0;
+}
+
+section {
+	background-color: rgba(251, 248, 140, 0.57);
+	padding : 10px 0;
+	text-align: start;
+	padding-left: 25%;
+}
+
+h3 {
+	background-color: rgb(251, 145, 145);
+	margin-bottom: 0;
+	line-height: 1.5;
+}
+
+#back {
+    width:5%;
+    height:13vh;
+    position: fixed;
+    left: 0;
+    top:0;
+    font-size: 35px;
+    background-color: #212121;
+    color:white;
+    border: 0;
+    margin:0;
+}
+
+#back:hover {
+    background-color: #7c7c7d;
+}
